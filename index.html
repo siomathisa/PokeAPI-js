@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet" />
+    <title>PokeAPI</title>
+    <style>
+        @layer utilities {
+            .font-bungee {
+                font-family: "Bungee", cursive;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-slate-600 min-h-screen flex items-center justify-center font-bungee">
+    <div id="wrapper"
+        class="bg-slate-200 rounded-2xl shadow-xl p-6 max-w-sm w-full flex flex-col items-center space-y-4">
+        <!-- Image -->
+        <div id="image-wrapper" class="w-40 h-40 flex items-center justify-center rounded-full bg-rose-400 shadow-md">
+            <img id="image" src="" alt=""
+                class="w-32 h-32 object-contain drop-shadow-lg transition-transform duration-300 hover:scale-110" />
+        </div>
+
+        <!-- Header -->
+        <div id="header" class="text-center">
+            <div id="number" class="text-gray-500 text-sm uppercase tracking-wider"></div>
+            <div id="name" class="text-2xl font-bold text-gray-800"></div>
+        </div>
+
+        <!-- Button -->
+        <button id="button"
+            class="px-5 py-2 bg-rose-400 text-white rounded-xl shadow-md font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95">
+            Get another Pokemon !
+        </button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
